@@ -64,16 +64,14 @@ Lifesum-Automation
 
 ## Test Cases
 
-- **Tap Test:** Verifies that tapping the red circle fetches a food item.
-![alt text](images/lifesum-touch.gif)
+- **Tap Test:** Verifies that tapping the red circle fetches a food item.  
+  <img src="images/lifesum-touch.gif" alt="Tap Test" width="300"/>
 
 - **Shake Test:** Simulates a shake to fetch a new food item.
 
-![alt text](images/original.jpg) 
-
-![alt text](images/rotation.jpg) 
-
-![alt text](images/change.jpg) 
+  <img src="images/original.jpg" alt="Original Image" width="300"/>  
+  <img src="images/rotation.jpg" alt="Rotation Test" width="300"/>  
+  <img src="images/change.jpg" alt="Change Test" width="300"/>
 
 
 

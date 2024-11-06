@@ -46,7 +46,10 @@ jobs:
         target: default
 
     - name: Create AVD (Android Virtual Device)
-      run: echo "no" | avdmanager create avd -n test -k "system-images;android-30;google_apis;x86"
+      run: |
+        # Un-comment the below when we have servers available remotely
+        # echo "no" | avdmanager create avd -n test -k "system-images;android-30;google_apis;x86"
+        echo "Create AVD (Android Virtual Device)" 
       
     - name: Start AVD
       run: |
