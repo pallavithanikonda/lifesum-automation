@@ -2,6 +2,8 @@
 
 This project automates testing for the Lifesum app using Appium and WebdriverIO. It performs tests to verify the app's functionality of fetching food items by tapping a red circle or shaking the device.
 
+**Device/OS:** Considering only Android in this setup.
+
 ## Setup and Installation
 
 ### Prerequisites
@@ -70,7 +72,7 @@ We have implemented test pipeline for CI flow, on each commit the pipeline will 
 - Tap test
 - Shake test
 
-PS: Still it is sudo pipeline with the setup, nees some more work
+**PS:** Still it is sudo pipeline with the setup, need some more work
 
 **Pipeline :** https://github.com/pallavithanikonda/lifesum-automation/actions/workflows/appium-tests-ci.yml
 
