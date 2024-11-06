@@ -1,0 +1,27 @@
+{
+  "name": "lifesum-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"/home/kenneth/lifesum-automation/tests/food_fetch_test.js\" && exit 1 "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallavithanikonda/lifesum-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pallavithanikonda/lifesum-automation/issues"
+  },
+  "homepage": "https://github.com/pallavithanikonda/lifesum-automation#readme",
+  "dependencies": {
+    "@wdio/appium-service": "^9.2.9",
+    "@wdio/cli": "^9.2.10",
+    "@wdio/local-runner": "^9.2.8",
+    "@wdio/mocha-framework": "^9.2.8",
+    "@wdio/spec-reporter": "^9.2.8"
+  }
+}

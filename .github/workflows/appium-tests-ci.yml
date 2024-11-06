@@ -1,0 +1,72 @@
+name: Run Appium Tests - CI pipeline
+
+on:
+    workflow_dispatch:
+    push:
+      branches:
+        - main
+    pull_request:
+      branches:
+        - main
+
+jobs:
+  appium_tests:
+    runs-on: ubuntu-latest
+    services:
+      appium:
+        image: appium/appium
+        options: >-
+          --entrypoint ""
+        ports:
+          - 4723:4723
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16' # Ensure compatibility with your Node.js version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Set up Java environment
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'zulu'
+        java-version: '11'
+
+    - name: Download Android SDK
+      uses: android-actions/setup-android@v2
+      with:
+        api-level: 30 # Change if needed
+        build-tools: '30.0.3'
+        target: default
+
+    - name: Create AVD (Android Virtual Device)
+      run: echo "no" | avdmanager create avd -n test -k "system-images;android-30;google_apis;x86"
+      
+    - name: Start AVD
+      run: |
+        # Un-comment the below when we have servers available remotely
+        # nohup emulator -avd test -no-snapshot-save -no-audio -no-window &
+        # adb wait-for-device
+        # adb shell input keyevent 82 &
+        echo "Running emulator...!" 
+
+    - name: Run Tests
+      env:
+        APPIUM_URL: http://localhost:4723/wd/hub
+      run: |
+        # Un-comment the below when we have servers available remotely
+        # npx wdio run wdio.conf.js
+        eco "Running web driver IO..!"
+
+    - name: Upload Test Results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: ./results/
