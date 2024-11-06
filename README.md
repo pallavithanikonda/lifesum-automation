@@ -62,6 +62,20 @@ Lifesum-Automation
    npx wdio run wdio.conf.js
    ```
 
+## Github Actions
+
+### CI Tests:
+We have implemented test pipeline for CI flow, on each commit the pipeline will be triggered and run the tests markes as @smoke! The below are added as smoke but can be adjested as we agreed.
+
+- Tap test
+- Shake test
+
+PS: Still it is sudo pipeline with the setup, nees some more work
+
+**Pipeline :** https://github.com/pallavithanikonda/lifesum-automation/actions/workflows/appium-tests-ci.yml
+
+<img src="images/pipeline.png" alt="Tap Test" width="300"/>
+
 ## Test Cases
 
 - **Tap Test:** Verifies that tapping the red circle fetches a food item.  
