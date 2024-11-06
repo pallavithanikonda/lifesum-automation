@@ -81,7 +81,7 @@ We have implemented test pipeline for CI flow, on each commit the pipeline will 
 ## Test Cases
 
 - **Tap Test:** Verifies that tapping the red circle fetches a food item.  
-  <img src="images/lifesum-touch.gif" alt="Tap Test" width="300"/>
+  <img src="images/lifesum-touch.gif" alt="Tap Test" width="500"/>
 
 - **Shake Test:** Simulates a shake to fetch a new food item.
 
