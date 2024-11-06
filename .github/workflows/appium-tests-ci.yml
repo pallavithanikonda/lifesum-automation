@@ -16,7 +16,7 @@ jobs:
       appium:
         image: appium/appium
         options: >-
-          --entrypoint ""
+          --entrypoint "appium"
         ports:
           - 4723:4723
 
@@ -62,7 +62,7 @@ jobs:
       run: |
         # Un-comment the below when we have servers available remotely
         # npx wdio run wdio.conf.js
-        eco "Running web driver IO..!"
+        eco "Running web driver IO with wdio.conf.js"
 
     - name: Upload Test Results
       if: always()
