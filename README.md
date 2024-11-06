@@ -76,7 +76,7 @@ We have implemented test pipeline for CI flow, on each commit the pipeline will 
 
 **Pipeline :** https://github.com/pallavithanikonda/lifesum-automation/actions/workflows/appium-tests-ci.yml
 
-<img src="images/pipeline.png" alt="Tap Test" width="800"/>
+<img src="images/pipeline.png" alt="pipelien" />
 
 ## Test Cases
 
