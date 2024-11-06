@@ -65,7 +65,7 @@ jobs:
       run: |
         # Un-comment the below when we have servers available remotely
         # npx wdio run wdio.conf.js
-        eco "Running web driver IO with wdio.conf.js"
+        echo "Running web driver IO with wdio.conf.js"
 
     - name: Upload Test Results
       if: always()
