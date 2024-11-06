@@ -76,12 +76,12 @@ We have implemented test pipeline for CI flow, on each commit the pipeline will 
 
 **Pipeline :** https://github.com/pallavithanikonda/lifesum-automation/actions/workflows/appium-tests-ci.yml
 
-<img src="images/pipeline.png" alt="Tap Test" width="300"/>
+<img src="images/pipeline.png" alt="Tap Test" width="500"/>
 
 ## Test Cases
 
 - **Tap Test:** Verifies that tapping the red circle fetches a food item.  
-  <img src="images/lifesum-touch.gif" alt="Tap Test" width="500"/>
+  <img src="images/lifesum-touch.gif" alt="Tap Test" width="300"/>
 
 - **Shake Test:** Simulates a shake to fetch a new food item.
 
